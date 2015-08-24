@@ -1,0 +1,194 @@
+
+
+html {
+  font-family: 'ptsans-regular';
+  padding-top: 70px; 
+  background: #fff;
+  position: relative;
+  min-height: 100%;
+}
+body { 
+  font-family: 'ptsans-regular';
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+
+/*RUTINE TRINE*/
+
+.aktive-rutiner{
+  color: #fff;
+  margin-bottom: 20px;
+  background-color: #7bb4ad;
+  padding: 10px 10px 10px 10px;
+}
+
+.ferdige-rutiner{
+  margin-bottom: 20px;
+  background-color: #a0a6a5;
+  padding: 10px 10px 10px 10px;
+}
+
+
+/*--*/
+
+nav {
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px -7px #5a5b5b;
+     -moz-box-shadow: 0 5px 5px -7px #5a5b5b;
+          box-shadow: 0 5px 5px -7px #5a5b5b;
+}
+img {
+  margin: 5px;
+}
+.navbar-fixed-top {
+  height: 80px;
+}
+
+.find-projects-nav {
+  left: 50px;
+}
+
+.small-nav-text {
+  margin-top: 35px;
+  color: #606463;
+  text-transform: uppercase;
+}
+.small-nav-text:hover {
+  color: #545756;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'ptsans-bold'; 
+}
+a:hover, a:focus {
+  color: none;
+  text-decoration: none;
+}
+button {
+  padding: 10px 35px;
+  border: 3px solid #606463;
+  background-color: transparent;
+  color: #606463;
+}
+button:focus { 
+  outline:none;
+}
+button:hover {
+  color: #75bbb3;
+}
+
+p {
+  font-family: 'ptsans-regular';
+}
+
+.logo {
+  color: #75bbb3;
+  padding-left: 20px;
+  font-size: 18px;
+  margin-top: 26px;
+  font-family: 'ptsans-bold';
+
+}
+
+
+.header-width {
+  width: 75%;
+  text-align: left;
+  margin: 0 auto;
+  color: #fff;
+}
+
+
+.register-admin-btn {
+  margin-top: 150px;
+  padding: 40px 50px 50px 50px;
+  border: 2.5px solid #606463;
+  color: #606463;
+  font-family: 'ptsans-bold';
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.register-admin-btn:hover {
+  border: 2.5px solid #75bbb3;
+}
+
+.register-employer-btn {
+  margin-top: 150px;
+  padding: 40px 50px 50px 50px;
+  border: 2.5px solid #606463;
+  font-family: 'ptsans-bold';
+  color: #606463;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.register-employer-btn:hover {
+  border: 2.5px solid #75bbb3;
+}
+
+.btn-info {
+  background-color: #75bbb3;
+}
+
+.btn-info:hover{
+  background-color: #85b4ae;
+}
+
+.btn-lagnyrutine {
+  margin-left: 73px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #606463;
+}
+
+.btn-lagnyrutine:hover {
+  background-color: #747978;
+}
+
+.subheading {
+  color: #3c7f98;
+  margin-top: 10px;
+  border: none;
+}
+
+.login-out-button {
+  margin-top: 20px;
+  border: 2px solid #75bbb3;
+  padding: 10px 15px 8px 15px;
+  background-color: #75bbb3;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.login-out-button a {
+  color: #75bbb3;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.login-out-button:hover {
+  color: #c1cdd4;
+}
+.login-out-button:hover a {
+  color: #c1cdd4;
+}
+
+.login-topspacing {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.date{
+  font-family: 'ptsans-italic';
+  font-size: 10px;
+  color: #d3e5e0;
+
+}

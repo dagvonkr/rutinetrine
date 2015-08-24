@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rutine Trine</title>
+   
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.css">   
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+
+
+    
+  </head>
+  <body ng-app="rutineTrine">
+
+                
+
+    <div ng-controller="navCtrl">
+        <nav class="navbar-fixed-top">
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+              <p class="logo" style="cursor:pointer" ui-sref="landingpage">RUTINE TRINE</p>
+            </div>
+
+
+            <!-- Her er det en fin nav logikk som er enkel og oversette -->  
+
+            <div class="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-3 col-sm-offset-2 col-xs-3 find-projects-nav">            
+            </div> 
+
+              <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3">
+                <div ng-if="user">
+                  <h6 class="small-nav-text" style="cursor:pointer" ng-if="isEmployer" ui-sref="dashboard-employer"> {{ user.login.local.email }} </h6>
+                  <h6 class="small-nav-text" style="cursor:pointer" ng-if="!isEmployer" ui-sref="dashboard-admin">{{ user.login.local.email }}</h6>
+                </div>
+              </div>   
+
+               <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 text-center">    
+                  <button class="login-out-button" ng-if="!user" ui-sref="login"> Log in </button>
+                  <button class="login-out-button"ng-if="user"> <a href="/user/logout"> Log out</a></button>
+              </div>
+            </div>    
+         </nav>
+      </div> 
+
+    
+            
+      <div ui-view> </div>    
+
+  
+
+
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+   
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- routes -->
+    <script src="/js/app.js"></script>
+
+    <!-- controllers -->
+    <script src="/js/controllers/userCtrl.js"></script>
+    <script src="/js/controllers/dashboardEmployerCtrl.js"></script>
+    <script src="/js/controllers/dashboardAdminCtrl.js"></script>
+    <script src="/js/controllers/navCtrl.js"></script>
+
+    <!-- services -->
+    <script src="/js/services/userServ.js"></script>
+    <script src="/js/services/rutineServ.js"></script>
+   
+
+
+
+</body>
+</html>
+

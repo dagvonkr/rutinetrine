@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            
+            <div id="form-container">
+                <div class="page-header text-center">
+                    <h2>Registrer som employer</h2>
+                </div>
+                <form ng-submit="register_employer()">
+                    <div class="form-group">
+
+                        <label>email:</label>
+                        <input type="email" class="form-control" ng-model="user.login.local.email">
+
+                    </div>  
+
+                    <div class="form-group">
+
+                        <label>passord:</label>
+                        <input type="password" class="form-control" ng-model="user.login.local.password">
+
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-info">Registrer</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

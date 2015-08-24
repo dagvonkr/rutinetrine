@@ -1,0 +1,26 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ja jeg vet, masse <br> ekke så kult -->
+
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+
+	  <div ng-repeat="rutine in user.rutiner" class="aktive-rutiner">
+
+	    <h4> {{rutine.description.title}} </h4>
+	    
+	    <p class="date"> {{rutine.date.date_start}} </p>
+
+	    <p> Utføres av: {{rutine.assignment.assigned_to}} </p>
+	    <p> Tildelt av: {{rutine.assignment.assigned_by}}
+
+	    <p> {{rutine.description.description}} </p>
+
+	  </div>
+
+	</div>
+</div>
